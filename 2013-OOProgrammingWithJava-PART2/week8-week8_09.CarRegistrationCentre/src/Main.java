@@ -34,5 +34,11 @@ public class Main {
         System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
         System.out.println(owners.get(new RegistrationPlate("D", "B WQ-431")));
         // if the hashCode hasn't been overwritten, the owners are not found
+        
+        VehicleRegister ar = new VehicleRegister(); 
+        ar.add( new RegistrationPlate("FI", "AAA-111"), "Arto");
+        ar.add( new RegistrationPlate("FI", "BBB-222"), "Pekka");
+        ar.add( new RegistrationPlate("FI", "CCC-333"), "Arto");
+        ar.printOwners();
     }
 }
